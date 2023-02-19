@@ -1,0 +1,35 @@
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  row-gap: 12px;
+  border: 1px solid rgb(47, 51, 54);
+  border-radius: 16px;
+}
+
+.signInTitle {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.signInDescription {
+  font-size: 13px;
+  line-height: 16px;
+  color: rgb(113, 118, 123);
+}
+
+.signInButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 8px 12px;
+  column-gap: 4px;
+}

@@ -1,0 +1,137 @@
+.container {
+    display: none;
+    column-gap: 12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.container:focus-within .beepVisibility,
+.container:focus-within .beepAccessibility {
+    display: flex;
+}
+
+.container:focus-within .bottomContainer {
+    border-top-color: rgb(47, 51, 54);
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: var(--accent-color-main);
+}
+
+.mainContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.beepVisibility {
+    display: none;
+    align-items: center;
+    width: max-content;
+    padding: 0px 12px;
+    margin-bottom: 12px;
+    column-gap: 4px;
+    border: 1px solid rgb(83, 100, 113);
+    color: var(--accent-color-main);
+    border-radius: 999px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepVisibility:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.beepVisibility:active {
+    background-color: rgba(29, 155, 240, 0.2);
+}
+
+.beepInput {
+    margin: 12px 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.beepAccessibility {
+    display: none;
+    align-items: center;
+    width: max-content;
+    padding: 4px 12px;
+    margin-left: -12px;
+    margin-bottom: 12px;
+    column-gap: 4px;
+    border-radius: 999px;
+    color: var(--accent-color-main);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepAccessibility:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.beepAccessibility:active {
+    background-color: rgba(29, 155, 240, 0.2);
+}
+
+.bottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    padding: 12px 0px 4px;
+}
+
+.beepOptions {
+    display: flex;
+    align-items: center;
+    margin-left: -8px;
+}
+
+.beepStatus {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.createBeepButton {
+    padding: 8px 16px;
+    background-color: var(--accent-color-main);
+    border-radius: 999px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.createBeepButton:hover {
+    background-color: var(--accent-color-main-background-hover);
+}
+
+.createBeepButton:active {
+    background-color: var(--accent-color-main-background-active);
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+    .container {
+        display: flex;
+    }
+}

@@ -1,0 +1,36 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.spinnerBox {
+    width: 26px;
+    height: 26px;
+    animation: rotation 0.75s infinite linear;
+    margin: 8px;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+}
+
+.spinner :nth-child(1),
+.spinner :nth-child(2) {
+    stroke: var(--accent-color-main);
+    stroke-width: 4px;
+    fill: none;
+}
+
+.spinner :nth-child(1) {
+    opacity: 0.2;
+}
+
+.spinner :nth-child(2) {
+    stroke-dasharray: 80px;
+    stroke-dashoffset: 60px;
+}

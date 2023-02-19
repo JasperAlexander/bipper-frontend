@@ -1,7 +1,6 @@
 .primaryColumn {
   width: 100%;
   max-width: 600px;
-  height: 100%;
   margin: 0px auto;
   border-width: 0px 1px;
   border-style: solid;
@@ -25,6 +24,12 @@
   max-width: 400px;
 }
 
+.searchBarContainer {
+  display: none;
+  margin: 12px;
+  height: 40px;
+}
+
 @media screen and (min-width: 600px) {
   .primaryColumn {
     border-color: rgb(47, 51, 54);
@@ -44,6 +49,10 @@
 @media screen and (min-height: 500px) {
   .primaryColumn {
     border-color: rgba(0, 0, 0, 0);
+  }
+
+  .searchBarContainer {
+    display: flex;
   }
 }
 

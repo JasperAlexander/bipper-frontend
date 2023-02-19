@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    cursor: pointer;
+}
+
+.topContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 48px;
+    column-gap: 6px;
+    color: rgb(113, 118, 123);
+}
+
+.middleContainer {
+    display: flex;
+    column-gap: 12px;
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.avatar {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    background-color: var(--accent-color-main);
+    border-radius: 999px;
+}
+
+.middleMainContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.beepTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.beepTopLeft {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.beepUserTitleWithConfig {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.beepUserTitleWithConfig:hover .beepUserTitle {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
+.beepUserTitle {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.beepUserConfigIcon {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-color-main);
+}
+
+.beepUsername,
+.beepDot,
+.beepDate {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(113, 118, 123);
+}
+
+/* .beepDate:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+} */
+
+.beepTopRight {
+    display: flex;
+    color: rgb(113, 118, 123);
+}
+
+.beepTopRight:hover {
+    color: var(--accent-color-main);
+}
+
+.beepMiddle {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4px;
+}
+
+.beepBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    margin-left: -48px;
+}

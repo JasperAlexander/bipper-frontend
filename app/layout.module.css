@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0px;
+}
+
+.main {
+  display: flex;
+  min-height: 100%;
+}
+
+.mainContent {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .mainContent {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+  .header {
+    display: none;
+  }
+}

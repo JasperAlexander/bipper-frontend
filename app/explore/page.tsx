@@ -1,4 +1,4 @@
-import styles from '@/app/page.module.css'
+import styles from '@/app/explore/page.module.css'
 import { getServerSession } from 'next-auth/next'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import { redirect } from 'next/navigation'
@@ -8,7 +8,7 @@ import HeaderContent from '@/app/headercontent'
 import { Fragment } from 'react'
 import NavHeader from '@/app/navheader'
 
-export default async function IndexPage({ href }: { href: string }) {
+export default async function ExplorePage({ href }: { href: string }) {
   const session = await getServerSession(authOptions)
   if (session) redirect('/home')
 

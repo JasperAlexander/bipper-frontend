@@ -1,0 +1,21 @@
+.mainHeaderItemSpanInactive,
+.mainHeaderItemSpanActive {
+  display: none;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.mainHeaderItemSpanInactive {
+    font-weight: 400;
+}
+
+.mainHeaderItemSpanActive {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1140px) {
+    .mainHeaderItemSpanInactive,
+    .mainHeaderItemSpanActive {
+        display: inline;
+    }
+}

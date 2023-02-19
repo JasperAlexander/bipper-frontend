@@ -1,0 +1,212 @@
+.primaryColumn {
+  width: 100%;
+  max-width: 600px;
+  margin: 0px auto;
+  border-width: 0px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.primaryColumnHeader {
+  display: none;
+  flex-grow: 1;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: -0.5px;
+}
+
+.secondaryColumn {
+  display: none;
+  flex-grow: 1;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.beepNotAvailable {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .primaryColumn {
+    border-color: rgb(47, 51, 54);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .primaryColumn {
+    margin: 0;
+  }
+
+  .secondaryColumn {
+    display: flex;
+  }
+}
+
+@media screen and (min-height: 500px) {
+  .primaryColumn {
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+  .primaryColumn {
+    margin: 0;
+  }
+
+  .primaryColumnHeader {
+    display: flex;
+  }
+
+  .secondaryColumn {
+    flex-grow: 4;
+  }
+}
+
+@media screen and (min-width: 680px) and (min-height: 500px) {
+  .primaryColumn {
+    border-color: rgb(47, 51, 54);
+  }
+}
+
+/*  */
+.beepContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0px;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.beepHeader {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 12px;
+}
+
+.beepAvatarContainer {
+  display: flex;
+}
+
+.beepAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background-color: var(--accent-color-main);
+}
+
+.beepUserNamesContainer {
+  display: flex;
+  flex-grow: 1;
+}
+
+.beepUserNames {
+  display: flex;
+  flex-direction: column;
+}
+
+.beepUserName {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.beepUserName:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.beepUserVerified {
+  color: var(--accent-color-main);
+}
+
+.beepUserUsername {
+  display: flex;
+  color: rgb(113, 118, 123);
+}
+
+.moreOptionsButtonContainer {
+  display: flex;
+  border-radius: 999px;
+  color: rgb(113, 118, 123);
+}
+
+.moreOptionsButtonContainer:hover {
+  color: var(--accent-color-main);
+}
+
+.beepContent {
+  display: flex;
+  font-size: 23px;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+
+.beepTranslateButton {
+  display: flex;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--accent-color-main);
+}
+
+.beepInfo {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 16px 0px;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgb(113, 118, 123);
+}
+
+.beepCreatedAt {
+  display: flex;
+  white-space: pre-wrap;
+}
+
+.beepCreatedAt:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.beepViewCount {
+  color: var(--text-color);
+}
+
+.beepCounters {
+  display: flex;
+  align-items: center;
+  padding: 16px 0px;
+  column-gap: 20px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: var(--border-color);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.beepCounter {
+  display: flex;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.beepCounter:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.beepCounterText {
+  color: rgb(113, 118, 123);
+}
+
+.beepButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}

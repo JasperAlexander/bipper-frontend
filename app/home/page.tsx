@@ -1,16 +1,18 @@
-import styles from '@/app/page.module.css'
+import styles from '@/app/home/page.module.css'
 import { getServerSession } from 'next-auth/next'
 import { authOptions } from '@/pages/api/auth/[...nextauth]'
 import { redirect } from 'next/navigation'
-import SignInContainer from '@/app/signincontainer'
 import Feed from '@/app/feed'
 import HeaderContent from '@/app/headercontent'
 import { Fragment } from 'react'
 import NavHeader from '@/app/navheader'
+import SearchBar from '@/app/searchbar'
+import CreateBeep from '@/app/home/createbeep'
 
-export default async function IndexPage({ href }: { href: string }) {
+export default async function HomePage({ href }: { href: string }) {
   const session = await getServerSession(authOptions)
-  if (session) redirect('/home')
+  // Commented for testing
+  // if (!session) redirect('/')
 
   return (
     <Fragment>
@@ -20,11 +22,14 @@ export default async function IndexPage({ href }: { href: string }) {
           <HeaderContent href={href} />
         </div>
         <div>
+          <CreateBeep />
           <Feed />
         </div>
       </div>
       <div className={styles.secondaryColumn}>
-        <SignInContainer />
+        <div className={styles.searchBarContainer}>
+          <SearchBar />
+        </div>
       </div>
     </Fragment>
   )

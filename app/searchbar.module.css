@@ -1,0 +1,30 @@
+.searchBar {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 4px 0px;
+    background-color: rgb(32, 35, 39);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 999px;
+}
+
+.searchBar:focus-within {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--accent-color-main);
+}
+
+.searchBarIcon {
+    min-width: 32px;
+    padding-left: 12px;
+    color: rgb(113, 118, 123);
+}
+
+.searchBarInput {
+    width: 100%;
+    padding: 4px 12px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}

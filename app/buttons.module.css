@@ -1,0 +1,196 @@
+.beepAnalyticsButton {
+    display: flex;
+    align-items: center;
+    color: rgb(113, 118, 123);
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.beepAnalyticsButtonSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepAnalyticsButton:hover {
+    color: var(--accent-color-blue);
+}
+
+.beepAnalyticsButton:hover .beepAnalyticsButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-hover);
+}
+
+.beepAnalyticsButton:active .beepAnalyticsButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-active);
+}
+
+.beepLikeButton {
+    display: flex;
+    align-items: center;
+    color: rgb(113, 118, 123);
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.beepLikeButtonSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepLikeButton:hover {
+    color: var(--accent-color-red);
+}
+
+.beepLikeButton:hover .beepLikeButtonSvgContainer {
+    background-color: var(--accent-color-red-hover);
+}
+
+.beepLikeButton:active .beepLikeButtonSvgContainer {
+    background-color: var(--accent-color-red-active);
+}
+
+.beepRebeepButton {
+    display: flex;
+    align-items: center;
+    color: rgb(113, 118, 123);
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.beepRebeepButtonSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepRebeepButton:hover {
+    color: var(--accent-color-green);
+}
+
+.beepRebeepButton:hover .beepRebeepButtonSvgContainer {
+    background-color: var(--accent-color-green-hover);
+}
+
+.beepRebeepButton:active .beepRebeepButtonSvgContainer {
+    background-color: var(--accent-color-green-active);
+}
+
+.beepReplyButton {
+    display: flex;
+    align-items: center;
+    color: rgb(113, 118, 123);
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.beepReplyButtonSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepReplyButton:hover{
+    color: var(--accent-color-blue);
+}
+
+.beepReplyButton:hover .beepReplyButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-hover);
+}
+
+.beepReplyButton:active .beepReplyButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-active);
+}
+
+.beepShareButton {
+    display: flex;
+    align-items: center;
+    color: rgb(113, 118, 123);
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.beepShareButtonSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.beepShareButton:hover {
+    color: var(--accent-color-blue);
+}
+
+.beepShareButton:hover .beepShareButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-hover);
+}
+
+.beepShareButton:active .beepShareButtonSvgContainer {
+    background-color: var(--accent-color-blue-text-active);
+}
+
+.moreOptionsButton {
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 999px;
+    color: inherit;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+}
+
+.moreOptionsButton:hover {
+    background-color: rgba(239, 243, 244, 0.1);
+}
+
+.moreOptionsButton:active {
+    background-color: rgba(239, 243, 244, 0.2);
+}
+
+.addButton {
+    display: flex;
+    padding: 8px;
+    border-radius: 999px;
+    color: var(--accent-color-main);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.addButton:hover {
+    background-color: var(--accent-color-main-text-hover);
+}
+
+.addButton:active {
+    background-color: var(--accent-color-main-text-active);
+}
+
+.addInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+}

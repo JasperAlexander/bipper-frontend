@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+}
+
+.container:focus-within .header,
+.container:focus-within .leftButtons,
+.container:focus-within .bottomReplyButton {
+    display: flex;
+}
+
+.container:focus-within .topReplyButton {
+    display: none;
+}
+
+.header {
+    display: none;
+    align-items: center;
+    margin-left: 58px;
+    column-gap: 4px;
+    color: rgb(113, 118, 123);
+}
+
+.replyToUserUsername {
+    color: var(--accent-color-blue);
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    column-gap: 10px;
+}
+
+.avatarContainer {
+    display: flex;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: var(--accent-color-blue);
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.contentTop {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-grow: 1;
+    margin: 12px 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftButtons {
+    display: none;
+    align-items: center;
+}
+
+.topReplyButton {
+    display: flex;
+}
+
+.bottomReplyButton {
+    display: none;
+}
+
+.topReplyButton,
+.bottomReplyButton {
+    padding: 8px 16px;
+    background-color: var(--accent-color-main);
+    border-radius: 999px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.topReplyButton:hover,
+.bottomReplyButton:hover {
+    background-color: var(--accent-color-main-background-hover);
+}
+
+.topReplyButton:active,
+.bottomReplyButton:active {
+    background-color: var(--accent-color-main-background-active);
+}
